@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="🦄 Rosa fyller 3! · Rosa turns 3!">
+<meta property="og:description" content="Enhörningskalas · Lör 31 okt 15–18 · Slottsskolan Idrottshall. Svara här · RSVP here">
+<meta property="og:image" content="https://ebine.github.io/Rosa-kalas/rosa.jpg">
+<meta property="og:type" content="website">
+<title>Rosas enhörningskalas 🦄</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Baloo+Chettan+2:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#3d2a5c; --ink-soft:#6f5f8c; --card:#ffffffee; --line:#eadff7;
+    --pink:#ff8fc7; --pink-deep:#e8559f; --lilac:#b79cff; --mint:#7fe0c8; --sun:#ffd36e; --sky:#8fd3ff;
+    --yes:#2fb38a; --no:#9a8bb3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{min-height:100%}
+  body{
+    font-family:'Nunito',system-ui,sans-serif;color:var(--ink);
+    background:linear-gradient(160deg,#ffe3f1 0%,#efe2ff 45%,#dff6ff 100%) fixed;
+    padding:24px 16px 48px; overflow-x:hidden;
+  }
+  .ml{font-family:'Baloo Chettan 2','Noto Sans Malayalam',sans-serif;font-weight:600}
+  .sparkles{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .sparkles span{position:absolute;font-size:18px;opacity:.55;animation:twinkle 3.2s ease-in-out infinite}
+  @keyframes twinkle{0%,100%{transform:scale(.7);opacity:.25}50%{transform:scale(1.1);opacity:.75}}
+  @media (prefers-reduced-motion:reduce){.sparkles span,.photo{animation:none!important}}
+
+  .wrap{position:relative;z-index:1;max-width:440px;margin:0 auto}
+  .card{background:var(--card);border-radius:28px;padding:26px 20px;box-shadow:0 18px 50px -20px #8a5fc480,0 2px 0 #fff inset;backdrop-filter:blur(6px)}
+
+  .hero{text-align:center}
+  .photo{position:relative;width:176px;height:176px;margin:0 auto 14px;border-radius:50%;padding:7px;
+    background:conic-gradient(var(--pink),var(--sun),var(--mint),var(--sky),var(--lilac),var(--pink));
+    box-shadow:0 14px 34px -12px #c56bd6;animation:bob 3.8s ease-in-out infinite}
+  .photo img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid #fff;background:#fff}
+  .photo .uni{position:absolute;right:-6px;bottom:4px;width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:30px;box-shadow:0 6px 14px -6px #8a5fc4}
+  .photo .age{position:absolute;left:-4px;top:6px;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;
+    font-family:'Fredoka',sans-serif;font-weight:700;font-size:26px;color:#fff;background:linear-gradient(135deg,var(--pink-deep),#9b5cff);box-shadow:0 6px 14px -6px #8a5fc4;border:3px solid #fff}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+
+  .kicker{font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:11.5px;color:var(--pink-deep)}
+  .kicker .ml{letter-spacing:0;text-transform:none;font-size:13px}
+  h1{font-family:'Fredoka',sans-serif;font-weight:700;font-size:40px;line-height:1.05;margin:6px 0 4px;
+     background:linear-gradient(90deg,var(--pink-deep),#9b5cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tri-title{font-weight:800;font-size:16px;line-height:1.35}
+  .tri-title .ml{font-size:17px}
+  .sub{margin-top:12px;font-size:17px;font-weight:800}
+  .lines{color:var(--ink-soft);font-size:14.5px;line-height:1.45;margin-top:2px}
+  .lines .ml{font-size:15.5px}
+
+  .details{display:grid;gap:10px;margin:20px 0 16px}
+  .detail{display:flex;gap:12px;align-items:center;background:#faf5ff;border:1.5px solid var(--line);border-radius:16px;padding:11px 14px}
+  .detail .ico{font-size:22px;width:28px;text-align:center;flex:none}
+  .detail b{display:block;font-size:16px}
+  .detail small{display:block;color:var(--ink-soft);font-size:13px;line-height:1.35}
+  .detail small .ml{font-size:14px}
+  .detail a{color:inherit;text-decoration:none}
+  .hosts{text-align:center;color:var(--ink-soft);font-size:14px;line-height:1.45}
+  .hosts b{display:block;color:var(--ink);font-size:17px;margin-top:2px}
+
+  .rainbow{height:6px;border-radius:6px;margin:20px 0 22px;background:linear-gradient(90deg,var(--pink),var(--sun),var(--mint),var(--sky),var(--lilac))}
+
+  h2{font-family:'Fredoka',sans-serif;font-weight:600;font-size:26px;text-align:center}
+  .h2-sub{text-align:center;color:var(--ink-soft);font-size:14.5px;margin:2px 0 18px}
+  .h2-sub .ml{font-size:15.5px}
+
+  label,.label{display:block;font-weight:800;font-size:14px;margin:0 0 6px 4px}
+  label .ml,.label .ml{font-size:15px}
+  input[type=text],input[type=tel],input[type=password]{width:100%;font:inherit;font-size:17px;color:var(--ink);
+    padding:14px 16px;border-radius:16px;border:2px solid var(--line);background:#fff;outline:none;transition:border-color .15s,box-shadow .15s}
+  input:focus{border-color:var(--lilac);box-shadow:0 0 0 4px #b79cff33}
+  .field{margin-bottom:16px}
+
+  .choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .choice button{font:inherit;font-weight:800;font-size:16px;padding:14px 8px;border-radius:18px;border:2px solid var(--line);
+    background:#fff;color:var(--ink);cursor:pointer;transition:all .15s;line-height:1.25}
+  .choice button span.e{display:block;font-size:28px;margin-bottom:2px}
+  .choice button small{display:block;font-weight:700;font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+  .choice button small .ml{font-size:13.5px}
+  .choice button[aria-pressed=true].yes{border-color:var(--yes);background:#e6faf3;box-shadow:0 6px 18px -8px var(--yes)}
+  .choice button[aria-pressed=true].no{border-color:var(--no);background:#f3effa}
+
+  .submit{width:100%;margin-top:20px;font:inherit;font-family:'Fredoka',sans-serif;font-weight:600;font-size:19px;color:#fff;border:0;
+    padding:15px 12px;border-radius:20px;cursor:pointer;background:linear-gradient(90deg,var(--pink-deep),#9b5cff);box-shadow:0 12px 26px -12px #9b5cff}
+  .submit .ml{font-size:19px}
+  .submit:disabled{opacity:.6;cursor:wait}
+  .error{color:#c2185b;font-weight:700;font-size:14px;text-align:center;margin-top:12px;min-height:1em}
+
+  .done{text-align:center;padding:6px 0}
+  .done .big{font-size:56px}
+  .done h2{margin:8px 0 6px;font-size:24px}
+  .done p{color:var(--ink-soft);line-height:1.5}
+  .btn-soft{display:inline-block;margin-top:16px;font:inherit;font-weight:800;font-size:14px;color:var(--ink);background:#faf5ff;
+    border:2px solid var(--line);padding:10px 16px;border-radius:16px;cursor:pointer;text-decoration:none}
+  .btn-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+  /* admin */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 18px}
+  .stat{background:#faf5ff;border:1.5px solid var(--line);border-radius:16px;padding:12px 6px;text-align:center}
+  .stat b{display:block;font-family:'Fredoka',sans-serif;font-size:28px}
+  .stat small{font-size:12px;font-weight:800;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em}
+  .stat.y b{color:var(--yes)} .stat.n b{color:var(--no)}
+  .tabs{display:flex;gap:6px;margin-bottom:12px}
+  .tabs button{flex:1;font:inherit;font-weight:800;font-size:14px;padding:9px;border-radius:12px;border:2px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+  .tabs button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .guest{display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:1.5px solid var(--line)}
+  .guest:last-child{border-bottom:0}
+  .pill{font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;white-space:nowrap}
+  .pill.Ja{background:#e6faf3;color:var(--yes)} .pill.Nej{background:#f1edf7;color:var(--no)}
+  .guest .who{flex:1;min-width:0}
+  .guest .who b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .guest .who a{color:var(--ink-soft);font-size:14px;text-decoration:none}
+  .guest time{font-size:12px;color:var(--ink-soft);white-space:nowrap}
+  .empty{text-align:center;color:var(--ink-soft);padding:20px 0}
+  .demo{background:#fff6d6;border:1.5px dashed #e8c34d;color:#7a5b00;border-radius:14px;padding:10px 12px;font-size:13px;font-weight:700;text-align:center;margin-bottom:14px}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="sparkles" aria-hidden="true"></div>
+
+<main class="wrap">
+
+  <!-- ===== INVITE ===== -->
+  <section id="invite" class="card">
+    <div class="hero">
+      <div class="photo">
+        <img src="rosa.jpg" alt="Rosa" width="162" height="162">
+        <span class="age" aria-hidden="true">3</span>
+        <span class="uni" aria-hidden="true">🦄</span>
+      </div>
+      <div class="kicker">Inbjudan · Invitation · <span class="ml">ക്ഷണം</span></div>
+      <h1>Rosa fyller 3!</h1>
+      <p class="tri-title">Rosa turns 3! · <span class="ml">റോസയ്ക്ക് 3 വയസ്സ്!</span></p>
+
+      <p class="sub">Välkommen på enhörningskalas ✨</p>
+      <p class="lines">Join us for Rosa's unicorn kalas<br><span class="ml">റോസയുടെ യൂണികോൺ കലാസിലേക്ക് സ്വാഗതം</span></p>
+    </div>
+
+    <div class="details">
+      <div class="detail"><div class="ico">📅</div><div>
+        <b>Lördag 31 oktober</b>
+        <small>Saturday 31 October · <span class="ml">ശനിയാഴ്ച, ഒക്ടോബർ 31</span></small>
+      </div></div>
+      <div class="detail"><div class="ico">🕒</div><div>
+        <b>15:00 – 18:00</b>
+        <small>3 – 6 pm · <span class="ml">വൈകുന്നേരം 3 – 6 മണി</span></small>
+      </div></div>
+      <div class="detail"><div class="ico">📍</div><div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Slottsskolan" target="_blank" rel="noopener">
+          <b>Slottsskolan · Idrottshall</b>
+          <small>Karta · Map · <span class="ml">മാപ്പ്</span> ↗</small></a>
+      </div></div>
+    </div>
+
+    <p class="hosts">Varma hälsningar · With love · <span class="ml">സ്നേഹത്തോടെ</span><b>Ebin, Joh &amp; Zeo</b></p>
+
+    <div class="rainbow"></div>
+
+    <!-- form -->
+    <div id="formBox">
+      <h2>Kommer du? 🌈</h2>
+      <p class="h2-sub">Will you come? · <span class="ml">നിങ്ങൾ വരുമോ?</span></p>
+      <form id="rsvp" novalidate>
+        <div class="field">
+          <label for="name">Namn · Name · <span class="ml">പേര്</span></label>
+          <input id="name" type="text" autocomplete="name" placeholder="t.ex. Familjen Andersson" required>
+        </div>
+        <div class="field">
+          <label for="phone">Telefon · Phone · <span class="ml">ഫോൺ</span></label>
+          <input id="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="07x xxx xx xx" required>
+        </div>
+        <span class="label" id="ansLabel">Svar · Answer · <span class="ml">മറുപടി</span></span>
+        <div class="choice" role="group" aria-labelledby="ansLabel">
+          <button type="button" class="yes" data-v="yes" aria-pressed="false"><span class="e">🦄</span>Ja, vi kommer!
+            <small>Yes, we're coming!<br><span class="ml">അതെ, ഞങ്ങൾ വരും!</span></small></button>
+          <button type="button" class="no" data-v="no" aria-pressed="false"><span class="e">💌</span>Nej, tyvärr
+            <small>No, sorry<br><span class="ml">ഇല്ല, ക്ഷമിക്കണം</span></small></button>
+        </div>
+        <button class="submit" type="submit" id="submitBtn">Skicka · Send · <span class="ml">അയയ്ക്കുക</span> ✨</button>
+        <p class="error" id="err" role="alert"></p>
+      </form>
+    </div>
+
+    <!-- thanks -->
+    <div id="doneBox" class="done" hidden>
+      <div class="big" id="doneEmoji">🌈</div>
+      <h2 id="doneTitle"></h2>
+      <p id="doneText"></p>
+      <div class="btn-row">
+        <a class="btn-soft" id="calBtn" target="_blank" rel="noopener" hidden>📅 Kalender · Calendar · <span class="ml">കലണ്ടർ</span></a>
+        <button class="btn-soft" id="changeBtn" type="button">Ändra · Change · <span class="ml">മാറ്റുക</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ADMIN ===== -->
+  <section id="admin" class="card" hidden>
+    <div class="hero">
+      <div class="kicker">Gästlista · Guest list</div>
+      <h1 style="font-size:32px">Rosas kalas 🦄</h1>
+    </div>
+    <div id="demoNote" class="demo" hidden>Preview with sample data</div>
+
+    <form id="login" style="margin-top:18px">
+      <div class="field">
+        <label for="key">Admin code</label>
+        <input id="key" type="password" autocomplete="current-password" placeholder="Your secret code">
+      </div>
+      <button class="submit" type="submit">Show guest list</button>
+      <p class="error" id="adminErr" role="alert"></p>
+    </form>
+
+    <div id="list" hidden>
+      <div class="stats">
+        <div class="stat y"><b id="cYes">0</b><small>Ja</small></div>
+        <div class="stat n"><b id="cNo">0</b><small>Nej</small></div>
+        <div class="stat"><b id="cAll">0</b><small>Total</small></div>
+      </div>
+      <div class="tabs" role="group">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="Ja" aria-pressed="false">Ja</button>
+        <button type="button" data-f="Nej" aria-pressed="false">Nej</button>
+      </div>
+      <div id="guests"></div>
+      <div class="btn-row">
+        <button class="btn-soft" id="refresh" type="button">↻ Refresh</button>
+        <a class="btn-soft" id="sheetLink" target="_blank" rel="noopener" hidden>Open Google Sheet ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const ML = t => '<span class="ml">' + t + '</span>';
+
+  // sparkles
+  const sp = $('.sparkles'), glyphs = ['✦','✧','⋆','✨','♡'];
+  for (let i = 0; i < 18; i++) {
+    const s = document.createElement('span');
+    s.textContent = glyphs[i % glyphs.length];
+    s.style.left = Math.random()*100 + '%';
+    s.style.top = Math.random()*100 + '%';
+    s.style.animationDelay = (Math.random()*3).toFixed(2) + 's';
+    s.style.color = ['#ff8fc7','#b79cff','#7fe0c8','#ffd36e','#8fd3ff'][i % 5];
+    sp.appendChild(s);
+  }
+
+  // backend API (Google Apps Script, called in the background)
+  const API = 'https://script.google.com/macros/s/AKfycbzBNS42AxrI_xvA1xDu3R2K89Tde8v0F1YfhHVGjGhQDDYAFoWdO8KKrfwdCOokniaM/exec';
+  async function call(fn, arg) {
+    const body = fn === 'submitRsvp' ? Object.assign({ action: 'rsvp' }, arg) : { action: 'list', key: arg };
+    let res;
+    try {
+      res = await fetch(API, { method: 'POST', body: JSON.stringify(body), redirect: 'follow', credentials: 'omit' });
+    } catch (e) {
+      throw new Error('Nätverksfel · Network error – försök igen / try again');
+    }
+    let data;
+    try { data = await res.json(); } catch (e) { throw new Error('Serverfel · Server error – försök igen / try again'); }
+    if (data && data.ok === false) throw new Error(data.error || 'Error');
+    return data;
+  }
+
+  function route(params) {
+    if (params && Object.prototype.hasOwnProperty.call(params, 'admin')) {
+      $('#invite').hidden = true; $('#admin').hidden = false;
+    }
+  }
+  route(Object.fromEntries(new URLSearchParams(location.search)));
+
+  /* ----- RSVP ----- */
+  let choice = '';
+  document.querySelectorAll('.choice button').forEach(b => b.addEventListener('click', () => {
+    choice = b.dataset.v;
+    document.querySelectorAll('.choice button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    $('#err').textContent = '';
+  }));
+
+  const calUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+    + '&text=' + encodeURIComponent('Rosas enhörningskalas 🦄')
+    + '&dates=20261031T150000/20261031T180000&ctz=Europe/Stockholm'
+    + '&location=' + encodeURIComponent('Slottsskolan, Idrottshall')
+    + '&details=' + encodeURIComponent('Rosa fyller 3! · Rosa turns 3! · റോസയ്ക്ക് 3 വയസ്സ്!');
+
+  const BTN_LABEL = $('#submitBtn').innerHTML;
+
+  $('#rsvp').addEventListener('submit', async e => {
+    e.preventDefault();
+    const name = $('#name').value.trim(), phone = $('#phone').value.trim();
+    const err = $('#err');
+    if (!name) { err.innerHTML = 'Skriv ditt namn · Enter your name · ' + ML('പേര് നൽകുക'); $('#name').focus(); return; }
+    if (phone.replace(/\D/g,'').length < 6) { err.innerHTML = 'Skriv telefonnummer · Enter phone · ' + ML('ഫോൺ നമ്പർ നൽകുക'); $('#phone').focus(); return; }
+    if (!choice) { err.innerHTML = 'Välj ja eller nej · Choose yes or no · ' + ML('അതെ / ഇല്ല തിരഞ്ഞെടുക്കുക'); return; }
+    err.textContent = '';
+    const btn = $('#submitBtn'); btn.disabled = true; btn.textContent = 'Skickar… · Sending…';
+    try {
+      const res = await call('submitRsvp', { name, phone, coming: choice });
+      const yes = choice === 'yes';
+      $('#doneEmoji').textContent = yes ? '🦄' : '💌';
+      $('#doneTitle').innerHTML = res.updated
+        ? 'Svar uppdaterat · Answer updated<br>' + ML('മറുപടി പുതുക്കി')
+        : (yes ? 'Hurra! · Yay! · ' + ML('ഹായ്!') + ' 🎉' : 'Tack · Thank you · ' + ML('നന്ദി'));
+      $('#doneText').innerHTML = yes
+        ? 'Vi ses den 31 oktober kl 15!<br>See you on 31 October at 3 pm!<br>' + ML('ഒക്ടോബർ 31-ന് വൈകുന്നേരം 3 മണിക്ക് കാണാം!')
+        : 'Vi kommer att sakna dig!<br>We\'ll miss you!<br>' + ML('ഞങ്ങൾ നിങ്ങളെ മിസ് ചെയ്യും!');
+      $('#calBtn').href = calUrl; $('#calBtn').hidden = !yes;
+      $('#formBox').hidden = true; $('#doneBox').hidden = false;
+    } catch (ex) {
+      err.textContent = ex.message;
+    } finally {
+      btn.disabled = false; btn.innerHTML = BTN_LABEL;
+    }
+  });
+  $('#changeBtn').addEventListener('click', () => { $('#doneBox').hidden = true; $('#formBox').hidden = false; });
+
+  /* ----- ADMIN ----- */
+  let all = [], filter = 'all', key = '';
+  const fmt = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleString('sv-SE', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' }); };
+
+  function render() {
+    $('#cYes').textContent = all.filter(g => g.coming === 'Ja').length;
+    $('#cNo').textContent = all.filter(g => g.coming === 'Nej').length;
+    $('#cAll').textContent = all.length;
+    const box = $('#guests'); box.textContent = '';
+    const rows = filter === 'all' ? all : all.filter(g => g.coming === filter);
+    if (!rows.length) { const p = document.createElement('p'); p.className = 'empty'; p.textContent = 'No answers yet 🦄'; box.appendChild(p); return; }
+    rows.forEach(g => {
+      const el = document.createElement('div'); el.className = 'guest';
+      const who = document.createElement('div'); who.className = 'who';
+      const b = document.createElement('b'); b.textContent = g.name;
+      const a = document.createElement('a'); a.href = 'tel:' + g.phone.replace(/[^\d+]/g,''); a.textContent = g.phone;
+      who.append(b, a);
+      const pill = document.createElement('span'); pill.className = 'pill ' + g.coming; pill.textContent = g.coming;
+      const t = document.createElement('time'); t.textContent = fmt(g.time);
+      el.append(who, t, pill); box.appendChild(el);
+    });
+  }
+
+  async function load() {
+    const res = await call('getRsvps', key);
+    all = res.guests || [];
+    if (res.sheetUrl) { $('#sheetLink').href = res.sheetUrl; $('#sheetLink').hidden = false; }
+    render();
+  }
+
+  $('#login').addEventListener('submit', async e => {
+    e.preventDefault();
+    key = $('#key').value; $('#adminErr').textContent = '';
+    try { await load(); $('#login').hidden = true; $('#list').hidden = false; }
+    catch (ex) { $('#adminErr').textContent = ex.message; }
+  });
+  $('#refresh').addEventListener('click', () => load().catch(ex => alert(ex.message)));
+  document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
+    filter = b.dataset.f;
+    document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    render();
+  }));
+})();
+</script>
+</body>
+</html>
